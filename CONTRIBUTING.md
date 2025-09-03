@@ -4,7 +4,7 @@ Thanks for helping! This project is designed to be contributor‑friendly and ea
 
 ## Set up
 ```bash
-git clone https://github.com/your-user/ds-precommit-hooks
+git clone https://github.com/xoaryaa/ds-precommit-hooks
 cd ds-precommit-hooks
 python -m venv .venv && source .venv/bin/activate  # on Windows: .venv\Scripts\activate
 pip install -e ".[test]" -r requirements-dev.txt || pip install -e .

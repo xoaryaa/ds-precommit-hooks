@@ -18,7 +18,7 @@ Create `.pre-commit-config.yaml` in your project:
 
 ```yaml
 repos:
-  - repo: https://github.com/your-user/ds-precommit-hooks
+  - repo: https://github.com/xoaryaa/ds-precommit-hooks
     rev: v0.1.0
     hooks:
       - id: strip-notebook-outputs
