@@ -1,4 +1,5 @@
-import sys, json
+import sys
+import json
 
 def _clean_cell(cell):
     if "outputs" in cell:

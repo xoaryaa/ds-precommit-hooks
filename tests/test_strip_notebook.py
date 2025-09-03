@@ -1,4 +1,6 @@
-import json, os, tempfile
+import json
+import os
+import tempfile
 from ds_precommit_hooks.hooks.strip_notebook_outputs import strip_notebook
 
 def test_strip_notebook_outputs():

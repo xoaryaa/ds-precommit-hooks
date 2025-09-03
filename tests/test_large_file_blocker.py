@@ -1,4 +1,5 @@
-import os, tempfile
+import os
+import tempfile
 from ds_precommit_hooks.hooks.large_file_blocker import main as block_main
 
 def test_large_file_blocker_allows_small_file():

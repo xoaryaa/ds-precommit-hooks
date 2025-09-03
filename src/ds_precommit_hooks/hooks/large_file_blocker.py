@@ -1,4 +1,5 @@
-import sys, os
+import sys
+import os
 
 def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv

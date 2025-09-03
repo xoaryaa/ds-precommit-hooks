@@ -1,4 +1,6 @@
-import sys, re, os
+import sys
+import re
+import os
 
 # Very simple patterns; contributors can add more
 PATTERNS = [
