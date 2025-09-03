@@ -1,8 +1,8 @@
 # ds-precommit-hooks
 
-Tiny, composable **pre-commit hooks for data/ML repos**:  
-- 🧽 `strip-notebook-outputs` — remove outputs & execution counts from `.ipynb`  
-- 🧱 `large-file-blocker` — prevent committing huge files (default >25MB)  
+Tiny, composable **pre-commit hooks for data/ML repos**:
+- 🧽 `strip-notebook-outputs` — remove outputs & execution counts from `.ipynb`
+- 🧱 `large-file-blocker` — prevent committing huge files (default >25MB)
 - 🔐 `simple-secret-scan` — flag likely secrets (basic regex + entropy)
 
 > Perfect for teaching clean repo hygiene, and great for first-time OSS contributions.
@@ -45,7 +45,7 @@ git commit -m "chore: enable data-science pre-commit hooks"
 - Fails commit if any staged file exceeds a threshold (default 25MB).
 
 ### `simple-secret-scan`
-- Flags common credential patterns (e.g., high-entropy strings, AWS-style keys).  
+- Flags common credential patterns (e.g., high-entropy strings, AWS-style keys).
 - Use alongside specialized scanners for stronger protection.
 
 ## CLI

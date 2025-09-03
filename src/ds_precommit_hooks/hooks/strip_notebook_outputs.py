@@ -1,12 +1,14 @@
 import sys
 import json
 
+
 def _clean_cell(cell):
     if "outputs" in cell:
         cell["outputs"] = []
     if "execution_count" in cell:
         cell["execution_count"] = None
     return cell
+
 
 def strip_notebook(path):
     try:
@@ -21,6 +23,7 @@ def strip_notebook(path):
         print(f"[strip-notebook-outputs] error processing {path}: {e}", file=sys.stderr)
         return False
 
+
 def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     if not argv:
@@ -31,6 +34,7 @@ def main(argv=None):
         if p.endswith(".ipynb"):
             ok = strip_notebook(p) and ok
     return 0 if ok else 1
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

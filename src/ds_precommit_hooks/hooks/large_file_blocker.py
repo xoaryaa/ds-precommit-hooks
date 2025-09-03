@@ -1,6 +1,7 @@
 import sys
 import os
 
+
 def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     if not argv:
@@ -34,6 +35,7 @@ def main(argv=None):
         print(f"Max allowed: {max_bytes} bytes. Adjust with --max-bytes.", file=sys.stderr)
         return 1
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
