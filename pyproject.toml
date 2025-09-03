@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ds-precommit-hooks"
+version = "0.1.0"
+description = "Pre-commit hooks tailored for data science & ML repositories (strip notebook outputs, block large files, scan for secrets)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "Community Maintainers"}]
+keywords = ["pre-commit", "data-science", "ml", "notebooks", "security"]
+dependencies = ["nbformat>=5.10"]
+
+[project.urls]
+Homepage = "https://github.com/your-user/ds-precommit-hooks"
+Issues = "https://github.com/your-user/ds-precommit-hooks/issues"
+
+[project.scripts]
+dsph = "ds_precommit_hooks.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ds_precommit_hooks"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+addopts = "-q"

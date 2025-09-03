@@ -1,0 +1,19 @@
+repos:
+  - repo: local
+    hooks:
+      - id: strip-notebook-outputs
+        name: strip-notebook-outputs
+        entry: python -m ds_precommit_hooks.hooks.strip_notebook_outputs
+        language: python
+        types: [jupyter]
+      - id: large-file-blocker
+        name: large-file-blocker
+        entry: python -m ds_precommit_hooks.hooks.large_file_blocker
+        language: python
+        types: [file]
+        args: ["--max-bytes=26214400"]
+      - id: simple-secret-scan
+        name: simple-secret-scan
+        entry: python -m ds_precommit_hooks.hooks.simple_secret_scan
+        language: python
+        types: [text]

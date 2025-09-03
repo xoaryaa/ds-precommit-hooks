@@ -1,0 +1,20 @@
+-   id: strip-notebook-outputs
+    name: strip-notebook-outputs
+    description: Remove outputs & execution counts from Jupyter notebooks
+    entry: python -m ds_precommit_hooks.hooks.strip_notebook_outputs
+    language: python
+    types: [jupyter]
+
+-   id: large-file-blocker
+    name: large-file-blocker
+    description: Block files larger than a threshold
+    entry: python -m ds_precommit_hooks.hooks.large_file_blocker
+    language: python
+    types: [file]
+
+-   id: simple-secret-scan
+    name: simple-secret-scan
+    description: Flag likely secrets in staged files (basic)
+    entry: python -m ds_precommit_hooks.hooks.simple_secret_scan
+    language: python
+    types: [text]

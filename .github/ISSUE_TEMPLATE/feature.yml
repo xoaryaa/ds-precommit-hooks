@@ -1,0 +1,12 @@
+name: Feature request
+description: Suggest a new hook or improvement
+title: "feat: "
+labels: ["enhancement", "help wanted"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What would you like to see?
+    validations:
+      required: true
